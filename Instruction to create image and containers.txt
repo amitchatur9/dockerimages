@@ -1,0 +1,29 @@
+####### CREATE IMAGE1 #####################################################333333
+1. Go to image1 folder. 
+2. run below commands, make sure after image name give space and then '.'.
+ 	$ docker build -t amit/image1 .
+3. verify docker image is created successfully, by executing below command:
+	$ docker images
+4. create a container from image1. 
+    $ docker run -p 4001:8080 -d amit/image1
+5. verify container is runnig
+	$ docker ps 
+6. view the docker cocntainer logs
+	$ docker logs <container_id>
+7. open url and verify in browser.
+
+####### CREATE IMAGE2 #####################################################333333
+1. Go to image2 folder. 
+2. run below commands, make sure after image name give space and then '.'.
+ 	$ docker build -t amit/image2 .
+3. verify docker image is created successfully, by executing below command:
+	$ docker images
+4. create a container from image2. 
+    $ docker run -p 4002:8080 -d amit/image2
+5. verify container is runnig
+	$ docker ps 
+6. view the docker cocntainer logs
+	$ docker logs <container_id>
+7. open url and verify in browser.
+
+
